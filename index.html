@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,6 +15,7 @@
       background: #1e9e5a;
       padding: 1rem;
     }
+
     .cartao {
       background: #fff;
       border-radius: 20px;
@@ -24,8 +26,16 @@
       text-align: center;
       color: #1d1d1f;
     }
-    .emoji { font-size: 4rem; }
-    h1 { margin: .5rem 0; color: #1e9e5a; }
+
+    .emoji {
+      font-size: 4rem;
+    }
+
+    h1 {
+      margin: .5rem 0;
+      color: #1e9e5a;
+    }
+
     .versao {
       margin-top: 1.5rem;
       padding: 1rem;
@@ -34,14 +44,48 @@
       text-align: left;
       line-height: 1.8;
     }
-    code { background: #e5e5ea; padding: 2px 6px; border-radius: 6px; }
-    footer { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #e5e5ea; color: #6e6e73; font-size: .85rem; }
+
+    code {
+      background: #e5e5ea;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+
+    /* Botão de e-mail */
+    .botao-email {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 12px 24px;
+      border-radius: 10px;
+      background: #1e9e5a;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: .2s;
+    }
+
+    .botao-email:hover {
+      background: #187d48;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5ea;
+      color: #6e6e73;
+      font-size: .85rem;
+    }
   </style>
 </head>
+
 <body>
   <main class="cartao">
+
     <div class="emoji">✅</div>
+
     <h1>Versão 3 — corrigida</h1>
+
     <p>O problema foi resolvido</p>
 
     <div class="versao">
@@ -50,10 +94,20 @@
       👤 <strong>Enviado por:</strong> __AUTOR__
     </div>
 
+    <!-- Botão para enviar e-mail -->
+    <a
+      class="botao-email"
+      href="mailto:seuemail@exemplo.com?subject=Versão%203%20-%20Site%20corrigido&body=Olá,%0D%0A%0D%0AO%20site%20foi%20publicado%20com%20sucesso.%0D%0A%0D%0AData:%20__DATA__%0D%0ACommit:%20__COMMIT__%0D%0AAutor:%20__AUTOR__"
+    >
+      📧 Enviar e-mail
+    </a>
+
     <footer>
       🎓 UNINOVE · Automação de Processos · DevOps<br>
       Prof. Marcelino Dias da Silva
     </footer>
+
   </main>
 </body>
 </html>
+```
